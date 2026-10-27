@@ -1,0 +1,8 @@
+{
+  "title": "Broken catalogue",
+  "topics": [
+    { "id": "a", "title": "First", "hours": 2, "requires": ["c"] },
+    { "id": "b", "title": "Second", "hours": 3, "requires": ["a"] },
+    { "id": "c", "title": "Third", "hours": 1, "requires": ["b"] }
+  ]
+}

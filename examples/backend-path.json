@@ -1,0 +1,52 @@
+{
+  "title": "Backend engineer learning path",
+  "topics": [
+    { "id": "git", "title": "Git basics", "hours": 3, "tags": ["tooling"] },
+    { "id": "python", "title": "Python fundamentals", "hours": 20, "tags": ["language"] },
+    { "id": "http", "title": "HTTP and REST", "hours": 5, "tags": ["web"] },
+    { "id": "sql", "title": "SQL and relational modelling", "hours": 12, "tags": ["data"] },
+    {
+      "id": "testing",
+      "title": "Testing with pytest",
+      "hours": 6,
+      "requires": ["python"],
+      "tags": ["quality"]
+    },
+    {
+      "id": "api",
+      "title": "Build a REST API",
+      "hours": 16,
+      "requires": ["python", "http", "testing"],
+      "tags": ["web"]
+    },
+    {
+      "id": "auth",
+      "title": "Authentication and sessions",
+      "hours": 8,
+      "requires": ["api"],
+      "tags": ["web", "security"]
+    },
+    {
+      "id": "cache",
+      "title": "Caching and performance",
+      "hours": 6,
+      "requires": ["api"],
+      "tags": ["performance"]
+    },
+    {
+      "id": "containers",
+      "title": "Containers and deployment",
+      "hours": 10,
+      "requires": ["api", "git"],
+      "tags": ["ops"]
+    },
+    {
+      "id": "observability",
+      "title": "Logs, metrics and traces",
+      "hours": 7,
+      "requires": ["containers"],
+      "tags": ["ops"],
+      "note": "Add tracing once the service is deployed."
+    }
+  ]
+}
